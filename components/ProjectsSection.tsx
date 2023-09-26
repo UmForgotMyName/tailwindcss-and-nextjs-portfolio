@@ -8,7 +8,7 @@ const projects = [
     {
         name: "JavaFX Tasklist Manager",
         description: "The JavaFX Tasklist Manager is a user-friendly task and to-do list manager built using Java Maven and JavaFX. This application offers a sleek and intuitive GUI designed to help users stay organized and on top of their tasks and projects with helpful sorting options.",
-        image: "/tasklist.png",
+        image: "/tasklist.PNG",
         github: "https://github.com/UmForgotMyName/JavaTaskManager",
     },
     {
@@ -20,7 +20,7 @@ const projects = [
     {
         name: "Mechanical Wheelchair",
         description: "During our Engineering Design 1 course, a team of six engineers collaborated to create an innovative mechanical wheelchair. In this project, a pivotal role was played in coding the microcomputer and wiring the circuits, contributing significantly to the successful outcome of the project.",
-        image: "/wheelchair.png",
+        image: "/wheelchair.PNG",
         github: "https://github.com/UmForgotMyName/MechanicalWheelchair",
     }
 ]
