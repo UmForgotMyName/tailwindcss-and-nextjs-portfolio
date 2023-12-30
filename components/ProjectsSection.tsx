@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import { BsGithub } from "react-icons/bs"
 import SlideUp from './SlideUp'
 
 const projects = [
@@ -22,6 +22,12 @@ const projects = [
         description: "During our Engineering Design 1 course, a team of six engineers collaborated to create an innovative mechanical wheelchair. In this project, a pivotal role was played in coding the microcomputer and wiring the circuits, contributing significantly to the successful outcome of the project.",
         image: "/wheelchair.PNG",
         github: "https://github.com/UmForgotMyName/MechanicalWheelchair",
+    },
+    {
+        name: "4-bit Arithmetic Logic Unit",
+        description: "During our Digital System Design course, a team of four engineers collaborated to create a 4-bit Arithmetic Logic Unit (ALU) in VHDL using structural syntax and knowledge of CPU architecture. The ALU output was connected to a seven segment display and was tested on a Xilinx Nexys 3 FPGA Board",
+        image: "/ALU.PNG",
+        github: "https://github.com/UmForgotMyName/ALU-in-VHDL",
     }
 ]
 

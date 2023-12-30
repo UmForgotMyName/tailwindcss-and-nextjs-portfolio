@@ -6,9 +6,7 @@ const skills = [
     { skill: "Java" },
     { skill: "React" },
     { skill: "Git" },
-    { skill: "GitHub" },
     { skill: "C" },
-    { skill: "C#" },
     { skill: "Python" },
     { skill: "Solidworks" },
     { skill: "AutoCAD" },
@@ -16,7 +14,9 @@ const skills = [
     { skill: "LTspice" },
     { skill: "Xilinx ISE" },
     { skill: "WireShark" },
-    { skill: "NMap" }
+    { skill: "NMap" },
+    { skill: "VMWare" },
+    { skill: "Virtual Box" },
 ];
 
 
