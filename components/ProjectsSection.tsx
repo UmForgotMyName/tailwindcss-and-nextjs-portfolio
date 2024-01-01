@@ -28,6 +28,12 @@ const projects = [
         description: "During our Digital System Design course, a team of four engineers collaborated to create a 4-bit Arithmetic Logic Unit (ALU) in VHDL using structural syntax and knowledge of CPU architecture. The ALU output was connected to a seven segment display and was tested on a Xilinx Nexys 3 FPGA Board",
         image: "/ALU.PNG",
         github: "https://github.com/UmForgotMyName/ALU-in-VHDL",
+    },
+    {
+        name: "Facial Recognition Security System (In Progress)",
+        description: "This project involves creating a security lock system using a Raspberry Pi 4 and various peripherals, including a 12V solenoid door lock, IR sensor, Raspberry Pi camera module, RFID scanner, and more. The system employs facial recognition and RFID technology to grant access to authorized personnel while logging unrecognized faces on a Flask website",
+        image: "/SecuritySystem.PNG",
+        github: "https://github.com/UmForgotMyName/security-system-rpi4",
     }
 ]
 
