@@ -6,8 +6,8 @@ import SlideUp from './SlideUp'
 
 const projects = [
     {
-        name: "JavaFX Tasklist Manager",
-        description: "The JavaFX Tasklist Manager is a user-friendly task and to-do list manager built using Java Maven and JavaFX. This application offers a sleek and intuitive GUI designed to help users stay organized and on top of their tasks and projects with helpful sorting options.",
+        name: "Java Tasklist Manager",
+        description: "Java Tasklist Manager is a simple task management application built using JavaFX and Maven. It provides user authentication with encrypted passwords stored in a MongoDB NoSQL document database for enhanced security. Built with user experience in mind with clean styling.",
         image: "/tasklist.PNG",
         github: "https://github.com/UmForgotMyName/JavaTaskManager",
     },
