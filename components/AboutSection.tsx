@@ -47,15 +47,17 @@ const AboutSection = () => {
                         </h1>
                         <p>
                             Hey, my name is Rehan Siddiqi. I am a third-year Computer Engineering student at the University of Guelph with a strong focus on hardware, electronics, and robotics. 
-                            I'm a driven learner, always eager to explore new technologies and apply them in innovative ways.
+                            I&apos;m a driven learner, always eager to explore new technologies and apply them in innovative ways.
                         </p>
                         <br />
                         <p>
-                            Recently, I contributed to the GIGAS project, where I developed systems for robotic tomato harvesting, enhancing my experience in robotics and automation. My work involved programming, hardware integration, and creating efficient technical solutions.
+                            Recently, I contributed to the GIGAS project, where I developed systems for robotic tomato harvesting, enhancing my experience in robotics and automation. 
+                            My work involved programming, hardware integration, and creating efficient technical solutions.
                         </p>
                         <br />
                         <p>
-                            I believe that continuous learning is essential, especially in fields like hardware and robotics, where technology rapidly evolves. I'm excited to further expand my knowledge and skills, both in my academic journey and future professional opportunities.
+                            I believe that continuous learning is essential, especially in fields like hardware and robotics, where technology rapidly evolves. 
+                            I&apos;m excited to further expand my knowledge and skills, both in my academic journey and future professional opportunities.
                         </p>
                     </div>
                     <div className="text-center md:w-1/2 md:text-left">
