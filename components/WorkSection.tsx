@@ -8,7 +8,7 @@ const workExperience = [
         time: "May 2024 - August 2024",
         location: "University of Guelph, Robotics Institute of Guelph",
         description: "Contributed to the GIGAS research project by developing a Python-based teleoperation program for a FANUC robot using ROS2 and NiceGUI, implementing a micro-ROS publisher and subscriber in C++ on a Teensy 4.1 for real-time data communication, and creating comprehensive technical documentation with Sphinx, hosted via NGINX.",
-        image: "/greenhouse_pic.JPG",
+        image: "/greenhouse_pic.jpg",
         link: "https://www.uoguelph.ca/research/discover-our-research/centres-institutes-groups/robotics-institute-guelph"
     },
 ]

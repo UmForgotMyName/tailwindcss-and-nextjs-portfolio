@@ -20,7 +20,7 @@ const projects = [
     {
         name: "16-bit CPU in VHDL",
         description: "In our Computer Organization course, my group of three developed a fully functional CPU using VHDL in Vivado. We designed and implemented all the critical components, including the ALU, control unit, registers, and memory, ensuring seamless integration for data processing.",
-        image: "/CPU.PNG",
+        image: "/CPU.png",
         github: "https://github.com/UmForgotMyName/CompOrg_CPU",
     },
     {
