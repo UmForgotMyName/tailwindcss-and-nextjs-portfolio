@@ -1,22 +1,34 @@
 import React from "react"
-import Image from "next/image"
 
 const skills = [
     { skill: "JavaScript" },
     { skill: "Java" },
     { skill: "React" },
     { skill: "Git" },
-    { skill: "C" },
+    { skill: "C/C++" },
     { skill: "Python" },
-    { skill: "Solidworks" },
-    { skill: "AutoCAD" },
-    { skill: "CircuitMaker" },
-    { skill: "LTspice" },
+    { skill: "SolidWorks" },
     { skill: "Xilinx ISE" },
     { skill: "WireShark" },
     { skill: "NMap" },
     { skill: "VMWare" },
     { skill: "Virtual Box" },
+    { skill: "Matlab" },
+    { skill: "VHDL" },
+    { skill: "ROS2" },
+    { skill: "Keras" },
+    { skill: "TensorFlow" },
+    { skill: "OpenCV" },
+    { skill: "VS Code" },
+    { skill: "IntelliJ" },
+    { skill: "Microsoft Office" },
+    { skill: "Docker" },
+    { skill: "Ubuntu Linux" },
+    { skill: "Raspbian" },
+    { skill: "Vivado" },
+    { skill: "Simulink" },
+    { skill: "Gazebo" },
+    { skill: "PlatformIO" }
 ];
 
 
@@ -34,24 +46,16 @@ const AboutSection = () => {
                             Get to know me!
                         </h1>
                         <p>
-                            Hey, my name is Rehan Siddiqi.
-                            I am a motivated self-learner whos always eager
-                            to learn about new technology! I currently attend
-                            the Univeristy of Guelph for Computer Engineering.
+                            Hey, my name is Rehan Siddiqi. I am a third-year Computer Engineering student at the University of Guelph with a strong focus on hardware, electronics, and robotics. 
+                            I'm a driven learner, always eager to explore new technologies and apply them in innovative ways.
                         </p>
                         <br />
                         <p>
-                            I enjoy spending my time learning about cybersecurity and computer hardware.
-                            In the future, I hope to delve deeper into both fields exploring the exciting
-                            intersection where cybersecurity and computer hardware converge to create
-                            robust and secure technological solutions.
+                            Recently, I contributed to the GIGAS project, where I developed systems for robotic tomato harvesting, enhancing my experience in robotics and automation. My work involved programming, hardware integration, and creating efficient technical solutions.
                         </p>
                         <br />
                         <p>
-                            I personally believe that you can never stop learning,
-                            which perfectly complements STEM. With this being said,
-                            I am excited to see what opportunities the future holds
-                            both in school and the workplace.
+                            I believe that continuous learning is essential, especially in fields like hardware and robotics, where technology rapidly evolves. I'm excited to further expand my knowledge and skills, both in my academic journey and future professional opportunities.
                         </p>
                     </div>
                     <div className="text-center md:w-1/2 md:text-left">
@@ -68,13 +72,6 @@ const AboutSection = () => {
                                 )
                             })}
                         </div>
-                        <Image
-                            src="/javalogo.png"
-                            alt=""
-                            width={220}
-                            height={220}
-                            className="hidden md:block md:relative md:bottom-0 md:left-16 md:z-0"
-                        />
                     </div>
                 </div>
             </div>

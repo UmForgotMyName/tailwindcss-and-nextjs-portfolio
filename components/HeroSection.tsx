@@ -15,11 +15,11 @@ const HeroSection = () => {
                         Hey, I&apos;m Rehan.
                     </h1>
                     <p className='text-lg mt-4 mb-6 md:text-2xl'>
-                        I am a second-year Computer Engineering student at the University of Guelph.{" "}
+                        I am a third-year Computer Engineering student at the University of Guelph.{" "}
                         <span className="font-semibold text-red-600">
                             With a passion for innovation and a dedication to learning,{" "}
                         </span>
-                        I am excited to delve into the ways in which technology can enhance our everyday experiences.{" "}
+                        I am excited to explore how technology can enrich our everyday lives.{" "}
                     </p>
 
                     <div className='flex flex-row'>

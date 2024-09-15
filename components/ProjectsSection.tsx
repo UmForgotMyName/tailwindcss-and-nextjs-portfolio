@@ -6,10 +6,22 @@ import SlideUp from './SlideUp'
 
 const projects = [
     {
+        name: "Facial Recognition Security System (In Progress)",
+        description: "This project involves creating a security lock system using a Raspberry Pi 4 and various peripherals, including a 12V solenoid door lock, IR sensor, Raspberry Pi camera module, RFID scanner, and more. The system employs facial recognition and RFID technology to grant access to authorized personnel while logging unrecognized faces on a Flask website",
+        image: "/SecuritySystem.PNG",
+        github: "https://github.com/UmForgotMyName/security-system-rpi4",
+    },
+    {
         name: "Java Tasklist Manager",
         description: "Java Tasklist Manager is a simple task management application built using JavaFX and Maven. It provides user authentication with encrypted passwords stored in a MongoDB NoSQL document database for enhanced security. Built with user experience in mind with clean styling.",
         image: "/tasklist.PNG",
         github: "https://github.com/UmForgotMyName/JavaTaskManager",
+    },
+    {
+        name: "16-bit CPU in VHDL",
+        description: "In our Computer Organization course, my group of three developed a fully functional CPU using VHDL in Vivado. We designed and implemented all the critical components, including the ALU, control unit, registers, and memory, ensuring seamless integration for data processing.",
+        image: "/CPU.PNG",
+        github: "https://github.com/UmForgotMyName/CompOrg_CPU",
     },
     {
         name: "LaserFiche Java File Manager",
@@ -23,18 +35,6 @@ const projects = [
         image: "/wheelchair.PNG",
         github: "https://github.com/UmForgotMyName/MechanicalWheelchair",
     },
-    {
-        name: "4-bit Arithmetic Logic Unit",
-        description: "During our Digital System Design course, a team of four engineers collaborated to create a 4-bit Arithmetic Logic Unit (ALU) in VHDL using structural syntax and knowledge of CPU architecture. The ALU output was connected to a seven segment display and was tested on a Xilinx Nexys 3 FPGA Board",
-        image: "/ALU.PNG",
-        github: "https://github.com/UmForgotMyName/ALU-in-VHDL",
-    },
-    {
-        name: "Facial Recognition Security System (In Progress)",
-        description: "This project involves creating a security lock system using a Raspberry Pi 4 and various peripherals, including a 12V solenoid door lock, IR sensor, Raspberry Pi camera module, RFID scanner, and more. The system employs facial recognition and RFID technology to grant access to authorized personnel while logging unrecognized faces on a Flask website",
-        image: "/SecuritySystem.PNG",
-        github: "https://github.com/UmForgotMyName/security-system-rpi4",
-    }
 ]
 
 export const ProjectsSection = () => {

@@ -27,6 +27,10 @@ const Navbar = () => {
             page: "about",
         },
         {
+            label: "Work Experience",
+            page: "work",
+        },
+        {
             label: "Projects",
             page: "projects",
         },
