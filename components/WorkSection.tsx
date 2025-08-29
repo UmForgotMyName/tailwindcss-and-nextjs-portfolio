@@ -5,7 +5,7 @@ import SlideUp from './SlideUp'
 const workExperience = [
     {
         name: "Research Assistant",
-        time: "Jan 2025 – Present",
+        time: "Jan 2025 – Aug 2025",
         location: "Robotics Institute, University of Guelph",
     technologies: ["Python", "C++", "Docker", "ROS2", "FastAPI", "MuJoCo", "Yolov9"],
     description: "Developed intelligent path planning and perception systems for autonomous robots in agriculture. Focused on real-time decision making, data-driven automation, and advanced visual perception for robotic harvesting.",
