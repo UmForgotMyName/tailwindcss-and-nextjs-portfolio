@@ -6,64 +6,72 @@ import SlideUp from './SlideUp'
 
 const projects = [
     {
-        name: "Facial Recognition Security System (In Progress)",
-        description: "This project involves creating a security lock system using a Raspberry Pi 4 and various peripherals, including a 12V solenoid door lock, IR sensor, Raspberry Pi camera module, RFID scanner, and more. The system employs facial recognition and RFID technology to grant access to authorized personnel while logging unrecognized faces on a Flask website",
+        name: "Gazebo Moveit2 Motion Planner",
+        technologies: ["C++", "ROS2", "MoveIt2", "OMPL", "IKFast", "RViz2", "Gazebo", "Docker"],
+        description: "Developed a full-stack simulation of a 6-DOF robotic arm for autonomous motion using ROS2 and MoveIt2. Enabled fast, accurate path planning and real-time perception with OMPL, IKFast, and Octomap-based collision checking.",
+        image: "/ros2_gazebo_moveit2_rviz2.PNG",
+        github: "https://github.com/UmForgotMyName/gazebo-moveit2-motion-planner",
+    },
+    {
+        name: "Facial Recognition Security System",
+    technologies: ["Raspberry Pi 4", "Python", "Flask", "RFID", "IR Sensor", "Camera Module"],
+    description: "Built a security system with facial recognition and RFID access. Enhanced facility security by logging unrecognized faces and enabling seamless authorized entry.",
         image: "/SecuritySystem.PNG",
         github: "https://github.com/UmForgotMyName/security-system-rpi4",
     },
     {
-        name: "Java Tasklist Manager",
-        description: "Java Tasklist Manager is a simple task management application built using JavaFX and Maven. It provides user authentication with encrypted passwords stored in a MongoDB NoSQL document database for enhanced security. Built with user experience in mind with clean styling.",
+        name: "GreenScore - GDSC Hacks",
+        technologies: ["React", "FastAPI", "MongoDB", "Gemini AI", "Firebase", "Python"],
+    description: "Built an AI platform that rates food products on ethics and sustainability using barcode scans and product lookup. Enabled secure, real-time user experience with a responsive React/FastAPI interface and robust cloud integration.",
+        image: "/greenscore.png",
+        github: "https://github.com/asiddiqi04/GreenScore/tree/main",
+    },
+    {
+    name: "Workflow Coordinator",
+    technologies: ["Java", "JavaFX", "MongoDB", "NoSQL", "Maven"],
+    description: "Developed a desktop workflow planning app with secure authentication and real-time data persistence. Enabled efficient workflow creation, tracking, and completion for users through an intuitive interface and robust NoSQL backend.",
         image: "/tasklist.PNG",
         github: "https://github.com/UmForgotMyName/JavaTaskManager",
     },
     {
-        name: "16-bit CPU in VHDL",
-        description: "In our Computer Organization course, my group of three developed a fully functional CPU using VHDL in Vivado. We designed and implemented all the critical components, including the ALU, control unit, registers, and memory, ensuring seamless integration for data processing.",
-        image: "/CPU.png",
-        github: "https://github.com/UmForgotMyName/CompOrg_CPU",
-    },
-    {
         name: "LaserFiche Java File Manager",
-        description: "The LaserFiche Java File Manager is a powerful file management solution designed to simplify and optimize the way you organize, search, and manage your files. Leveraging a suite of advanced algorithms, including sorting and renaming, this tool offers users a near 90% reduction in the time wasted manually searching through files.",
+    technologies: ["Java"],
+    description: "Automated file management and search for efficiency. Reduced manual file handling time by up to 90% for end users.",
         image: "/laserfiche.jpg",
         github: "https://github.com/UmForgotMyName/FileProcesser",
-    },
-    {
-        name: "Mechanical Wheelchair",
-        description: "During our Engineering Design 1 course, a team of six engineers collaborated to create an innovative mechanical wheelchair. In this project, a pivotal role was played in coding the microcomputer and wiring the circuits, contributing significantly to the successful outcome of the project.",
-        image: "/wheelchair.PNG",
-        github: "https://github.com/UmForgotMyName/MechanicalWheelchair",
     },
 ]
 
 export const ProjectsSection = () => {
     return (
         <section id='projects'>
-            <h1 className="my-10 text-center font-bold text-4xl">
+            <h1 className="my-6 text-center font-bold text-4xl">
                 Projects
                 <hr className="w-6 h-1 mx-auto my-4 bg-red-600 border-0 rounded"></hr>
             </h1>
-            <div className='flex flex-col space-y-28'>
+            <div className='flex flex-col space-y-12'>
                 {projects.map((project, idx) => {
                     return (
-                        <div key={idx}>
+                        <div key={idx} className="transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-2">
                             <SlideUp offset="-300px 0px -300px 0px">
                                 <div className='flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12'>
-                                    <div className=' mt-8 md:w-1/2'>
-                                        <Link href={project.github} target='_blank'>
-                                            <Image
-                                                src={project.image}
-                                                alt=""
-                                                width={1000}
-                                                height={1000}
-                                                className="rounded-xl shadow-xl hover:opacity-70"
-                                            />
+                                    <div className='mt-8 md:w-1/2 flex items-stretch justify-center'>
+                                        <Link href={project.github} target='_blank' className="flex w-full h-full">
+                                            <div className="w-full h-full min-h-[220px] md:min-h-[320px] relative flex-1">
+                                                <Image
+                                                    src={project.image}
+                                                    alt=""
+                                                    fill
+                                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                                    className="rounded-xl shadow-xl hover:opacity-70"
+                                                />
+                                            </div>
                                         </Link>
                                     </div>
-                                    <div className=' mt-12 md:w-1/2'>
+                                    <div className='mt-12 md:w-1/2 flex flex-col justify-between'>
                                         <h1 className='text-4xl font-bold mb-6 text-red-600'>{project.name}</h1>
-                                        <p className='text-xl leading-7 mb-4 '>{project.description}</p>
+                                        <h2 className='text-lg font-bold mb-2 text-black dark:text-white'>{project.technologies.join(', ')}</h2>
+                                        <p className='text-xl leading-7 mb-4'>{project.description}</p>
                                         <div className='flex flex-row align-bottom space-x-4'>
                                             <Link href={project.github} target='_blank'>
                                                 <BsGithub
