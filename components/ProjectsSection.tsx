@@ -6,6 +6,13 @@ import SlideUp from './SlideUp'
 
 const projects = [
     {
+        name: "Reinforcement Learning Arm Controller",
+        technologies: ["Python", "Isaac Lab", "Isaac Sim", "RSL-RL", "PPO"],
+        description: "Trained obstacle-aware arm reaching policies in Isaac Lab + Isaac Sim using RSL-RL PPO. Built a staged curriculum to improve performance as obstacles increased, and used TensorBoard to track success, collisions, and reward stability.",
+        image: "/IsaacLab.PNG",
+        github: "https://github.com/UmForgotMyName/RL_Arm_Controller",
+    },
+    {
         name: "Gazebo Moveit2 Motion Planner",
         technologies: ["C++", "ROS2", "MoveIt2", "OMPL", "IKFast", "RViz2", "Gazebo", "Docker"],
         description: "Developed a full-stack simulation of a 6-DOF robotic arm for autonomous motion using ROS2 and MoveIt2. Enabled fast, accurate path planning and real-time perception with OMPL, IKFast, and Octomap-based collision checking.",
@@ -14,31 +21,38 @@ const projects = [
     },
     {
         name: "Facial Recognition Security System",
-    technologies: ["Raspberry Pi 4", "Python", "Flask", "RFID", "IR Sensor", "Camera Module"],
-    description: "Built a security system with facial recognition and RFID access. Enhanced facility security by logging unrecognized faces and enabling seamless authorized entry.",
+        technologies: ["Raspberry Pi 4", "Python", "Flask", "RFID", "IR Sensor", "Camera Module"],
+        description: "Built a security system with facial recognition and RFID access. Enhanced facility security by logging unrecognized faces and enabling seamless authorized entry.",
         image: "/SecuritySystem.PNG",
         github: "https://github.com/UmForgotMyName/security-system-rpi4",
     },
     {
+        name: "ESP-NOW Wireless SCADA Mesh Network",
+        technologies: ["C++", "ESP32", "FreeRTOS", "ESP-NOW"],
+        description: "Built a 4-node ESP32 SCADA mesh with FreeRTOS and ESP-NOW for real-time pump control. Implemented PID regulation on the head node and a slotting/ACK scheme to keep communications reliable and low-latency.",
+        image: "/WSN.PNG",
+        github: "https://github.com/LiamHatala12/WSN-SCADA-Project",
+    },
+    {
+        name: "RTOS PID Temperature Controller",
+        technologies: ["C++", "STM32", "uC/OS-III", "LabVIEW"],
+        description: "Built an STM32 PID temperature controller on uC/OS-III with a 200 ms control loop. Scheduled I/O, control, HMI, and logging tasks deterministically and validated the firmware in a HIL setup against a LabVIEW plant over UART.",
+        image: "/RTOS.PNG",
+        github: "https://github.com/UmForgotMyName/uCOS3-Hot-Air-Controller",
+    },
+    {
         name: "GreenScore - GDSC Hacks",
         technologies: ["React", "FastAPI", "MongoDB", "Gemini AI", "Firebase", "Python"],
-    description: "Built an AI platform that rates food products on ethics and sustainability using barcode scans and product lookup. Enabled secure, real-time user experience with a responsive React/FastAPI interface and robust cloud integration.",
+        description: "Built an AI platform that rates food products on ethics and sustainability using barcode scans and product lookup. Enabled secure, real-time user experience with a responsive React/FastAPI interface and robust cloud integration.",
         image: "/greenscore.png",
         github: "https://github.com/asiddiqi04/GreenScore/tree/main",
     },
     {
-    name: "Workflow Coordinator",
-    technologies: ["Java", "JavaFX", "MongoDB", "NoSQL", "Maven"],
-    description: "Developed a desktop workflow planning app with secure authentication and real-time data persistence. Enabled efficient workflow creation, tracking, and completion for users through an intuitive interface and robust NoSQL backend.",
+        name: "Workflow Coordinator",
+        technologies: ["Java", "JavaFX", "MongoDB", "NoSQL", "Maven"],
+        description: "Developed a desktop workflow planning app with secure authentication and real-time data persistence. Enabled efficient workflow creation, tracking, and completion for users through an intuitive interface and robust NoSQL backend.",
         image: "/tasklist.PNG",
         github: "https://github.com/UmForgotMyName/JavaTaskManager",
-    },
-    {
-        name: "LaserFiche Java File Manager",
-    technologies: ["Java"],
-    description: "Automated file management and search for efficiency. Reduced manual file handling time by up to 90% for end users.",
-        image: "/laserfiche.jpg",
-        github: "https://github.com/UmForgotMyName/FileProcesser",
     },
 ]
 
@@ -68,10 +82,10 @@ export const ProjectsSection = () => {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className='mt-12 md:w-1/2 flex flex-col justify-between'>
-                                        <h1 className='text-4xl font-bold mb-6 text-red-600'>{project.name}</h1>
-                                        <h2 className='text-lg font-bold mb-2 text-black dark:text-white'>{project.technologies.join(', ')}</h2>
-                                        <p className='text-xl leading-7 mb-4'>{project.description}</p>
+                                    <div className='mt-12 md:w-1/2 flex flex-col'>
+                                        <h1 className='text-4xl font-bold mb-1 text-red-600'>{project.name}</h1>
+                                        <h2 className='text-lg font-bold mb-0 text-black dark:text-white'>{project.technologies.join(', ')}</h2>
+                                        <p className='text-xl leading-7 mb-2'>{project.description}</p>
                                         <div className='flex flex-row align-bottom space-x-4'>
                                             <Link href={project.github} target='_blank'>
                                                 <BsGithub
