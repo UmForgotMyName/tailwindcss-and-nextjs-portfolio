@@ -67,9 +67,9 @@ export const ProjectsSection = () => {
                 {projects.map((project, idx) => {
                     return (
                         <div key={idx} className="transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-2">
-                            <SlideUp offset="-300px 0px -300px 0px">
-                                <div className='flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12'>
-                                    <div className='mt-8 md:w-1/2 flex items-stretch justify-center'>
+                            <SlideUp>
+                                <div className='flex flex-col md:flex-row md:items-center md:space-x-12'>
+                                    <div className='mt-8 md:mt-0 md:w-1/2 flex items-stretch justify-center'>
                                         <Link href={project.github} target='_blank' className="flex w-full h-full">
                                             <div className="w-full h-full min-h-[220px] md:min-h-[320px] relative flex-1">
                                                 <Image
@@ -82,7 +82,7 @@ export const ProjectsSection = () => {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className='mt-12 md:w-1/2 flex flex-col'>
+                                    <div className='mt-12 md:mt-0 md:w-1/2 flex flex-col'>
                                         <h1 className='text-4xl font-bold mb-1 text-red-600'>{project.name}</h1>
                                         <h2 className='text-lg font-bold mb-0 text-black dark:text-white'>{project.technologies.join(', ')}</h2>
                                         <p className='text-xl leading-7 mb-2'>{project.description}</p>
