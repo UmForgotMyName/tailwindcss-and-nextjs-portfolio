@@ -39,7 +39,7 @@ const HeroSection = () => {
                             <BsGithub size={28} color={isLight ? "black" : "white"} />
                         </a>
                         <a
-                            href="mailto:rsiddiqi@uoguelph.ca"
+                            href="mailto:rehan.a.siddiqi@outlook.com"
                             className='hover:-translate-y-1 transition-transform cursor-pointer'
                         >
                             <HiOutlineMail size={28} color={isLight ? "black" : "white"} />

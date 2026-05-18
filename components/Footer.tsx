@@ -21,7 +21,7 @@ const Footer = () => {
                         />
                     </a>
                     <a
-                        href="mailto:rsiddiqi@uoguelph.ca"
+                        href="mailto:rehan.a.siddiqi@outlook.com"
                         rel="noreferrer"
                         target="_blank"
                     >

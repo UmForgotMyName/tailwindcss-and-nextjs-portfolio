@@ -7,7 +7,6 @@ const workExperience = [
         role: 'Automation Intern',
         organization: 'Give and Go Prepared Foods (Co-op)',
         time: 'May 2026 - Present',
-        location: 'Brampton, Ontario, Canada (On-site)',
         technologies: ['Allen-Bradley PLC', 'Studio 5000', 'Ladder Logic', 'Structured Text', 'FANUC Robotics', 'EtherNet/IP'],
         description:
             'At Give and Go, I support high-speed production automation by troubleshooting PLC, drive, and robotics systems under real operating pressure. This role has strengthened my controls discipline and taught me how small diagnostics and logic fixes directly improve uptime across large, fast-moving lines.',
@@ -16,21 +15,19 @@ const workExperience = [
         links: [{ label: 'Company', href: 'https://giveandgo.com/' }],
     },
     {
-        role: 'Robotics Software & Firmware Team Member',
-        organization: 'University of Guelph Robotics Team (Permanent Part-time)',
+        role: 'Robotics Software & Firmware Developer',
+        organization: 'University of Guelph Robotics Team',
         time: 'Sep 2025 - Present',
-        location: 'Guelph, Ontario, Canada (Hybrid)',
         technologies: ['C++', 'STM32', 'UDP', 'CAN', 'ROS 2', 'Ethernet'],
         description:
             'On the robotics team, I build embedded and networking software that keeps rover control reliable and low-latency from joystick input to actuation. It has sharpened my systems thinking across firmware, networking, and integration, and pushed me to design for reliability before adding complexity.',
-        image: '/robot_team_stm32.png',
+        image: '/Robotics_Logo.jpg',
         links: [{ label: 'Team', href: 'https://ugrt.github.io/' }],
     },
     {
         role: 'Research Assistant (Perception, Planning & Simulation)',
-        organization: 'University of Guelph (Permanent Part-time)',
+        organization: 'University of Guelph (Part-time)',
         time: 'Sep 2025 - Apr 2026',
-        location: 'Guelph, Ontario, Canada (Hybrid)',
         technologies: ['PyTorch', 'Python', 'Intel RealSense', 'MuJoCo', 'OMPL', 'ROS 2'],
         description:
             'In this part-time research, I focused on improving depth and perception for more challenging tomato conditions, including clutter and difficult occlusions. Building on earlier deployment work, I used simulation and planning pipelines to make decisions more robust before field execution.',
@@ -50,7 +47,6 @@ const workExperience = [
         role: 'Research Assistant (Robotics & AI Integration)',
         organization: 'University of Guelph (Co-op)',
         time: 'Jan 2025 - Sep 2025',
-        location: 'Guelph, Ontario, Canada (Hybrid)',
         technologies: ['Python','C++','ROS 2', 'Detectron2', 'YOLOv9', 'MuJoCo', 'OMPL', 'Docker'],
         description:
             'During this co-op term, I helped expand autonomous harvesting workflows beyond initial tomato setups toward broader produce scenarios, including strawberries, by improving perception and motion planning integration. This stage taught me how to translate research models into repeatable ROS 2 workflows that hold up in real trials.',
@@ -66,10 +62,9 @@ const workExperience = [
         role: 'Research Assistant (Robotics & Embedded Systems)',
         organization: 'University of Guelph (Co-op)',
         time: 'May 2024 - Aug 2024',
-        location: 'Guelph, Ontario, Canada (Hybrid)',
         technologies: ['C++', 'Python','ROS 2', 'micro-ROS', 'Docker', 'FastAPI', 'SQL'],
         description:
-            'This was my foundation on the GIGAS greenhouse tomato-harvesting stack, where I built teleoperation, control, and data infrastructure that made trials measurable and more reliable. It taught me end-to-end robotics integration and how software architecture choices impact real harvest efficiency in the greenhouse.',
+            'This term was the foundation of my robotics journey on the GIGAS greenhouse tomato-harvesting system. I built teleoperation, control, and data infrastructure that made trials more reliable and easier to measure, and it shaped how I approach end-to-end integration work in all of my later projects.',
         image: '/greenhouse_pic.jpg',
         links: [
             {
@@ -108,7 +103,6 @@ export const WorkSection = () => {
                                         <h1 className='text-4xl font-bold mb-2 text-red-600'>{project.role}</h1>
                                         <p className='text-xl mb-1 font-semibold'>{project.organization}</p>
                                         <p className='text-lg mb-1'>{project.time}</p>
-                                        <p className='text-lg mb-4'>{project.location}</p>
                                         <h2 className='text-lg font-bold mb-2 text-black dark:text-white'>{project.technologies.join(', ')}</h2>
                                         <p className='text-xl leading-7 mb-4'>{project.description}</p>
                                     </div>
